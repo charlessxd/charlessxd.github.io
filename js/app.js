@@ -55,7 +55,7 @@ particlesJS('particles-js',
             },
             "move": {
                 "enable": true,
-                "speed": 10,
+                "speed": 6,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -88,7 +88,7 @@ particlesJS('particles-js',
                     }
                 },
                 "bubble": {
-                    "distance": 400,
+                    "distance": 100,
                     "size": 40,
                     "duration": 2,
                     "opacity": 8,
@@ -98,7 +98,7 @@ particlesJS('particles-js',
                     "distance": 200
                 },
                 "push": {
-                    "particles_nb": 4
+                    "particles_nb": 1
                 },
                 "remove": {
                     "particles_nb": 2
