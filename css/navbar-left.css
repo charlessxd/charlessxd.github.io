@@ -42,7 +42,7 @@
 }
 
 .nav li > a .parent-icon > * {
-    fill: #888
+    fill: #000000
 }
 
 .nav li li a {
@@ -53,12 +53,12 @@
 }
 
 .nav li li a .parent-icon > * {
-    fill: #888
+    fill: #000000
 }
 
 .nav li li.open > a, .nav li li:hover > a {
     color: #eee;
-    background: #6b6b6b
+    background: #565656
 }
 
 .nav li li.open > a .parent-icon > *, .nav li li:hover > a .parent-icon > * {
@@ -67,7 +67,7 @@
 
 .nav li li.active > a, .nav li li.active:hover > a {
     color: #fff;
-    background: #069
+    background: #000000
 }
 
 .nav li li.active > a .parent-icon > *, .nav li li.active:hover > a .parent-icon > * {
@@ -86,16 +86,16 @@
 
 .nav > li.open > a, .nav > li:hover > a {
     background: #fff;
-    color: #069
+    color: #000000
 }
 
 .nav > li.open > a .parent-icon > *, .nav > li:hover > a .parent-icon > * {
-    fill: #069
+    fill: #000000
 }
 
 .nav > li.active > a, .nav > li.active:hover > a {
     color: #fff;
-    background: #069
+    background: #000000
 }
 
 .nav > li.active > a .parent-icon > *, .nav > li.active:hover > a .parent-icon > * {
