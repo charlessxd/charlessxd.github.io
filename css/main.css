@@ -1,36 +1,184 @@
-* {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     margin: 0;
+    padding: 0
 }
 
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -130px;
-}
-
-html, body {
-    height: 100%;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
 }
 
 body {
-    color: rgb(163, 163, 163);
-    background-color: rgba(0, 0, 0, 0.79);
-    font-family: "Britannic Bold";
-    letter-spacing: 1px;
+    line-height: 1
 }
 
-a {
-    text-decoration: none;
-    color: rgb(163, 163, 163);
+ol, ul {
+    list-style: none
 }
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* Style */
+
+/* typography */
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Britannic Bold";
+    color: rgb(163, 163, 163);
+    background-color: rgba(0, 0, 0, 0.79);
+}
+
+/* layout */
+body, html, .content-wrapper {
+    height: 100%
+}
+
+body {
+    display: flex
+}
+
+.content-wrapper {
+    display: table;
+    flex: 1;
+    width: 100%
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    margin: 0 auto
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: auto;
+    }
+}
+
+.content-inner {
+    padding: 0 0px;
+}
+
+.content-inner.main {
+    clear: both;
+    float: left;
+    height: 100%;
+}
+
+.pull-right {
+    float: right
+}
+
+.pull-left {
+    float: left
+}
+
+/* typo */
+a {
+    color: #fff;
+    text-decoration: none
+}
+
+a:hover {
+    color: #069
+}
+
+ul {
+    list-style: inherit;
+    list-style-position: inside;
+}
+
+/* btn */
+.btn {
+    padding: 5px 10px;
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.btn:hover {
+    color: #fff;
+    background: #333
+}
+
+.btn-brand {
+    color: #fff;
+    background: #069
+}
+
+.btn-brand:hover {
+    color: #fff;
+    background: #f00
+}
+
+
+/* navigation */
+.navigation {
+    background-color: #8f8f8f;
+}
+
+.nav {
+    font-size: 18px;
+    color: #777;
+}
+
+.navigation.side-nav {
+    width: 15%;
+    display: table-cell;
+}
+
+@media (max-width: 980px) {
+    .navigation.side-nav {
+        width: 20%;
+    }
+}
+
+@media (max-width: 650px) {
+    .navigation.side-nav {
+        width: 35%;
+    }
+}
+
+/* brand */
+a.brand {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #2b2b2b;
+    font-size: 20px;
+    font-weight: bold
+}
+
+a.brand:hover {
+    color: #fff;
+    background: #ccc;
+}
+
 
 #title {
     position: relative;
 
     font-size: 70px;
     text-align: center;
-    line-height: 100px;
+    line-height: 90px;
     background-color: rgba(0, 0, 0, 0.69);
 }
 
@@ -52,6 +200,7 @@ a {
 
 #particles-js {
     position: fixed;
+    left: 15%;
     width: 100%;
     height: 100%;
     background-color: rgba(17, 17, 17, 0.01);
