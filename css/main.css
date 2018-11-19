@@ -40,7 +40,8 @@ body {
     line-height: 32px;
     font-family: "Trebuchet MS";
     color: rgb(163, 163, 163);
-    background-color: rgba(0, 0, 0, 0.79);
+    background-image: url("../imgs/scenery_city_street_at_night.jpg");
+
 }
 
 /* layout */
@@ -132,7 +133,7 @@ ul {
 
 /* navigation */
 .navigation {
-    background-color: #8f8f8f;
+    background-color: rgba(143, 143, 143, 0.8);
 }
 
 .nav {
@@ -186,26 +187,27 @@ a.brand {
 
 #particles-js {
     position: fixed;
-    left: 15%;
+    /*left: 15%;*/
     width: 100%;
     height: 100%;
-    background-color: rgba(17, 17, 17, 0.01);
+    /*background-color: rgba(17, 17, 17, 0.01);*/
 }
 
 @media (max-width: 980px) {
     .navigation.side-nav {
         width: 20%;
     }
+    /*
     #particles-js {
         left: 20%;
-    }
+    }*/
 }
 
 @media (max-width: 650px) {
     .navigation.side-nav {
         width: 35%;
-    }
+    }/*
     #particles-js {
         left: 35%;
-    }
+    }*/
 }
